@@ -1,3 +1,4 @@
+import { ethers } from "ethers";
 import wallet from "./wallet";
 
 type TransferCoin = {
@@ -11,18 +12,22 @@ type TransferCoin = {
  */
 export default async function transferCoin(address: string): Promise<TransferCoin> {
   try {
+    // console.log(wallet.address, address);
     const transaction = await wallet.sendTransaction({
       to: address,
-      value: process.env.VALUE as string,
+      value: ethers.utils.parseUnits(process.env.VALUE as string, 'ether'),
     });
     return {
       success: true,
       message: transaction.hash,
     };
   } catch (error) {
+    console.log(error);
     return {
       success: false,
       message: "Unable to Send Transaction",
     };
   }
 }
+
+

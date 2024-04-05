@@ -39,13 +39,9 @@ export default function Faucet() {
       <div className="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-md space-y-8">
           <div>
-            <img className="mx-auto h-12 w-auto" src="logo.png" alt="Testnet Faucet" />
-            <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">Testnet Faucet</h2>
-            <p className="mt-2 text-center text-sm text-gray-600">
-              <a href="https://github.com/orgs/0xDeploy/repositories" target="_blank" rel="noreferrer" className="font-medium text-indigo-600 hover:text-indigo-500">
-                Open Source
-              </a>
-            </p>
+            <img className="mx-auto h-12 w-auto" src="zaplogo.svg" alt="ZapChain Faucet" />
+            <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">ZapChain Faucet</h2>
+
           </div>
           <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
             <div className="-space-y-px rounded-md shadow-sm">

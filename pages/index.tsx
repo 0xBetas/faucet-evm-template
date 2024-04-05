@@ -5,10 +5,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Testnet Faucet</title>
+        <title>ZapChain Faucet</title>
         <meta name="description" content="Testnet Facuet" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/zaplogo.svg" />
       </Head>
       <main>
         <Faucet />
