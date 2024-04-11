@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
-import wallet from "../../src/wallet";
+import { wallet } from "../../src/wallet";
 
 type Address = {
   address: string;
